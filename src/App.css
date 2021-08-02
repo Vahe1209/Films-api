@@ -3,5 +3,5 @@
   background-image: url(./assets/image/cinema.016bf73c.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  background-attachment: fixed;
 }

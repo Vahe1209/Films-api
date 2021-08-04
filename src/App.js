@@ -1,15 +1,14 @@
 import "./App.css";
 import Login from "./components/Login/Login.jsx";
 import { BrowserRouter as Router } from "react-router-dom";
-import FilmList from "./components/FilmList/FilmList";
+import Main from "./components/Main";
 
 function App() {
-  FilmList();
   return (
     <div className="App">
       <Router>
         {/* <Login /> */}
-        <FilmList />
+        <Main />
       </Router>
     </div>
   );

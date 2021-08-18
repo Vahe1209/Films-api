@@ -1,9 +1,0 @@
-.film-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-  padding: 2px;
-  margin-bottom: 5px;
-}

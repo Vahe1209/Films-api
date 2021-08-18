@@ -1,0 +1,458 @@
+.wrapper {
+  height: 89.7vh;
+  background-color: teal;
+}
+
+.imgBackground {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 71px);
+  opacity: 0.4;
+}
+
+.backgroundPath {
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  height: 70%;
+  border: 1px dotted magenta;
+}
+
+.status {
+  width: 140px;
+  position: absolute;
+  top: 550px;
+  font-weight: bold;
+  text-align: center;
+  left: 68px;
+  border-right: 3px solid black;
+  text-shadow: 2px 2px red;
+  color: white;
+  border-left: 3px solid black;
+}
+.date {
+  width: 160px;
+  position: absolute;
+  text-align: center;
+  top: 550px;
+  left: 200px;
+  font-weight: bold;
+  border-right: 3px solid black;
+}
+
+.borderStyle {
+  position: absolute;
+  width: 292px;
+  border-bottom: 3px solid black;
+  top: 589px;
+  left: 68px;
+}
+
+.title {
+  width: 600px;
+  position: absolute;
+  top: 94px;
+  font-weight: bold;
+  text-shadow: 3px 3px red;
+  font-size: 35px;
+  left: 560px;
+  color: white;
+  border-bottom: 3px solid black;
+}
+
+.overview {
+  width: 750px;
+  position: absolute;
+  top: 200px;
+  font-style: italic;
+  font-size: 20px;
+  left: 578px;
+  color: white;
+}
+
+.iconFilm {
+  color: rgb(67, 6, 75) !important;
+}
+
+.borderStyleOverview {
+  position: absolute;
+  width: 750px;
+  border-bottom: 3px solid black;
+  top: 435px;
+  left: 578px;
+  box-shadow: 0 0 50px whitesmoke;
+}
+
+.rating {
+  width: 140px;
+  position: absolute;
+  border: 3px solid black;
+  border-top: none;
+  border-bottom: none;
+  top: 480px;
+  left: 578px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.icon {
+  color: red !important;
+}
+
+.runtime {
+  width: 220px;
+  position: absolute;
+  border: 3px solid black;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  top: 480px;
+  left: 780px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.tagline {
+  width: 428px;
+  position: absolute;
+  border: 3px solid black;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  top: 450px;
+  left: 900px;
+  color: wheat;
+  text-shadow: 1px 1px red;
+  font-size: 10px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.borderBottom {
+  position: absolute;
+  width: 331px;
+  border-bottom: 3px solid black;
+  top: 473px;
+  left: 997px;
+}
+
+.githubIcon {
+  position: absolute;
+  top: 493px;
+  left: 1040px;
+}
+
+.github {
+  color: rgb(0, 0, 0) !important;
+  font-size: 40px !important;
+}
+
+.border {
+  position: absolute;
+  width: 750px;
+  border-bottom: 5px dotted black;
+  top: 560px;
+  left: 578px;
+  box-shadow: 0 0 50px whitesmoke;
+}
+
+@media screen and (max-width: 2560px) {
+  .wrapper {
+    height: 110vh;
+  }
+
+  .imgBackground {
+    height: 110vh;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .wrapper {
+    height: 100%;
+  }
+
+  .imgBackground {
+    height: 235vh;
+    object-fit: fill;
+  }
+
+  .backgroundPath {
+    left: 10%;
+    width: 80%;
+    top: 85px;
+    object-fit: contain;
+    height: 100vh;
+    border: none;
+  }
+
+  .status {
+    top: 625px;
+    left: 90px;
+  }
+
+  .date {
+    top: 590px;
+    left: 80px;
+    border-left: 3px solid black;
+  }
+
+  .title {
+    width: 200px;
+    top: 85px;
+    font-size: 23px;
+    left: 60px;
+    text-align: center;
+  }
+
+  .overview {
+    width: 250px;
+    top: 905px;
+    font-size: 10px;
+    left: 43px;
+  }
+
+  .borderStyleOverview {
+    width: 0;
+    border-bottom: none;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 whitesmoke;
+  }
+
+  .rating {
+    width: 140px;
+    top: 820px;
+    left: 90px;
+    font-size: 40px;
+  }
+
+  .runtime {
+    width: 100px;
+    border: none;
+    top: 790px;
+    left: 109px;
+    font-size: 15px;
+  }
+
+  .tagline {
+    width: 70px;
+    border: none;
+    border-top: 3px solid black;
+    top: 680px;
+    left: 127px;
+  }
+
+  .borderBottom {
+    width: 0;
+    border-bottom: none;
+    top: 0;
+    left: 0;
+  }
+
+  .githubIcon {
+    top: 1200px;
+    left: 85px;
+  }
+
+  .border {
+    width: 0;
+    border-bottom: none;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 whitesmoke;
+  }
+
+  .borderStyle {
+    width: 0;
+    border-bottom: none;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding-top: 10px;
+  }
+
+  .imgBackground {
+    height: 255vh;
+  }
+
+  .status {
+    top: 725px;
+    left: 440px;
+  }
+
+  .date {
+    top: 680px;
+    left: 430px;
+    border-left: 3px solid black;
+  }
+
+  .title {
+    top: 600px;
+    left: 420px;
+  }
+
+  .overview {
+    top: 1000px;
+    left: 385px;
+  }
+
+  .rating {
+    top: 910px;
+    left: 440px;
+  }
+
+  .runtime {
+    top: 875px;
+    left: 459px;
+  }
+
+  .tagline {
+    top: 780px;
+    left: 475px;
+  }
+
+  .githubIcon {
+    top: 1300px;
+    left: 430px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .status {
+    left: 326px;
+  }
+
+  .date {
+    left: 317px;
+  }
+
+  .title {
+    left: 295px;
+  }
+
+  .overview {
+    left: 283px;
+  }
+
+  .rating {
+    left: 328px;
+  }
+
+  .runtime {
+    left: 348px;
+  }
+
+  .tagline {
+    left: 365px;
+  }
+
+  .githubIcon {
+    left: 330px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .status {
+    left: 144px;
+  }
+
+  .date {
+    left: 134px;
+  }
+
+  .title {
+    left: 116px;
+  }
+
+  .overview {
+    left: 100px;
+  }
+
+  .rating {
+    left: 144px;
+  }
+
+  .runtime {
+    left: 157px;
+  }
+
+  .tagline {
+    left: 178px;
+  }
+
+  .githubIcon {
+    left: 147px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .status {
+    left: 136px;
+  }
+
+  .date {
+    left: 126px;
+  }
+
+  .title {
+    left: 108px;
+  }
+
+  .overview {
+    left: 92px;
+  }
+
+  .rating {
+    left: 136px;
+  }
+
+  .runtime {
+    left: 149px;
+  }
+
+  .tagline {
+    left: 170px;
+  }
+
+  .githubIcon {
+    left: 139px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .status {
+    left: 93px;
+  }
+
+  .date {
+    left: 82px;
+  }
+
+  .title {
+    left: 61px;
+  }
+
+  .overview {
+    left: 44px;
+  }
+
+  .rating {
+    left: 94px;
+  }
+
+  .runtime {
+    left: 112px;
+  }
+
+  .tagline {
+    left: 130px;
+  }
+
+  .githubIcon {
+    left: 85px;
+  }
+}

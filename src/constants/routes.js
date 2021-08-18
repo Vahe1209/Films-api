@@ -1,4 +1,4 @@
-import MovieDetails from "../components/MoviesDetails/MovieDetails";
+import MovieDetails from "../components/MovieDetails/MovieDetails";
 import Movies from "../components/MoviesList/MoviesList";
 import Favorite from "../pages/Favorite/Favorite";
 import Home from "../pages/Home/Home";

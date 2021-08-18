@@ -1,0 +1,24 @@
+.loginBackground {
+  background-image: url("../../assets/images/loginBackground.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 120vh;
+}
+
+.icon {
+  color: rgb(194, 160, 97);
+}
+
+.textP {
+  border-bottom: 3px solid green;
+}
+
+.textHere {
+  border-bottom: 1px solid rgb(128, 5, 5);
+}
+
+@media screen and (max-width: 1330px) {
+  .loginBackground {
+    height: 145vh;
+  }
+}

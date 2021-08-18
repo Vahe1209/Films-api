@@ -1,5 +1,5 @@
-import MovieDetails from "../components/Movies/MovieDetails";
-import Movies from "../components/Movies/Movies";
+import MovieDetails from "../components/MoviesDetails/MovieDetails";
+import Movies from "../components/MoviesList/MoviesList";
 import Favorite from "../pages/Favorite/Favorite";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";

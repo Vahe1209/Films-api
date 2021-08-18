@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.favoriteBackground {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 64px);
+  line-height: 50vh;
+}
+
+.favoriteBackground h1 {
+  color: rgb(0, 0, 0);
+  text-shadow: 3px 3px rgb(196, 70, 70);
+  font-size: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  .favoriteBackground h1 {
+    font-size: 18px;
+  }
+}

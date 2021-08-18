@@ -11,10 +11,10 @@ import GroupWorkIcon from "@material-ui/icons/GroupWork";
 import SearchIcon from "@material-ui/icons/Search";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import FavoriteIcon from "@material-ui/icons/Favorite";
+import PropTypes from "prop-types";
 import { removeFromLocalStorage } from "../../helpers/localStorage";
 import { storage } from "../../constants/storage";
 import { Routes } from "../../constants/routes";
-import PropTypes from "prop-types";
 
 const useStyles = makeStyles((theme) => ({
   grow: {

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { getImgUrl, getMovieById } from "../../services/services";
-import Loader from "../Loader/Loader";
 import MovieFilterIcon from "@material-ui/icons/MovieFilter";
 import StarsIcon from "@material-ui/icons/Stars";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import Loader from "../Loader/Loader";
 import "./MovieDetails.css";
 
 export default function MovieDetails() {

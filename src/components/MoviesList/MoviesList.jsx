@@ -1,10 +1,10 @@
-import findGenreName from "../../helpers/findGenres";
-import MovieCard from "./MovieCard";
+import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
+import findGenreName from "../../helpers/findGenres";
+import MovieCard from "../MovieCard/MovieCard";
 import { getGenres } from "../../services/services";
 import Loader from "../Loader/Loader";
 import "./Movies.css";
-import PropTypes from "prop-types";
 
 export default function Movies({ loading, movies, setOffset, setFavCount }) {
   const [genres, setGenres] = useState("");

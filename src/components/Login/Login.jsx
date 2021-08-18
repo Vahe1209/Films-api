@@ -4,14 +4,12 @@ import { UserOutlined } from "@ant-design/icons";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "./Login.css";
-import Logo from "../Logo/Logo.jsx";
 
 export default function Login() {
   const [user, setUser] = useState([]);
 
   return (
     <div className="login">
-      <Logo />
       <div className="form">
         <Avatar shape="square" size={64} icon={<UserOutlined />} />
 

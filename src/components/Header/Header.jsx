@@ -1,63 +1,86 @@
-import { LikeOutlined, LogoutOutlined } from "@ant-design/icons";
-import { Col, Menu, Row, Input } from "antd";
-import Logo from "../Logo/Logo";
-import "./Header.less";
+import React from "react";
+import PropTypes from "prop-types";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import { makeStyles } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
+import Fab from "@material-ui/core/Fab";
+import Zoom from "@material-ui/core/Zoom";
+import Navbar from "./Navbar";
 
-export default function Header({ onChange }) {
-  const onSearch = ({ target }) => {
-    onChange(target.value);
+const useStyles = makeStyles((theme) => ({
+  root: {
+    position: "fixed",
+    bottom: theme.spacing(2),
+    right: theme.spacing(2),
+    zIndex: 3,
+  },
+  backTopFab: {
+    width: "50px",
+    height: "50px",
+  },
+}));
+
+function ScrollTop(props) {
+  const { children, window } = props;
+  const classes = useStyles();
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+    disableHysteresis: true,
+    threshold: 100,
+  });
+
+  const handleClick = (event) => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      "#back-to-top-anchor"
+    );
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
   };
+
   return (
-    <Menu
-      style={{
-        padding: "20px",
-        backgroundColor: "hsl(0deg 0% 0% / 40%)",
-        margin: 0,
-      }}
-    >
-      <Row
-        justify="space-between"
-        align="middle"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          textAlign: "center",
-        }}
-      >
-        <Col
-          flex="300px"
-          style={{
-            height: "100px",
-            marginTop: "15px",
-          }}
-        >
-          <Logo />
-        </Col>
-        <Col flex="400px">
-          <Input
-            style={{
-              width: "100%",
-              height: "30px",
-              borderRadius: "15px",
-              padding: "5px",
-              border: "2px solid black",
-            }}
-            placeholder="Search"
-            onChange={onSearch}
-          />
-        </Col>
-        <Col
-          flex="300px"
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-          }}
-        >
-          <LikeOutlined style={{ fontSize: "50px" }} />
-          <LogoutOutlined style={{ fontSize: "50px" }} />
-        </Col>
-      </Row>
-    </Menu>
+    <Zoom in={trigger}>
+      <div onClick={handleClick} role="presentation" className={classes.root}>
+        {children}
+      </div>
+    </Zoom>
   );
 }
+
+ScrollTop.propTypes = {
+  children: PropTypes.element.isRequired,
+  window: PropTypes.func,
+};
+
+export default function Header(props) {
+  const classes = useStyles();
+  return (
+    <React.Fragment>
+      <CssBaseline />
+      <AppBar>
+        <Navbar
+          favCount={props.favCount}
+          handleSearchInput={props.handleSearchInput}
+        />
+      </AppBar>
+      <Toolbar id="back-to-top-anchor" />
+      <ScrollTop {...props}>
+        <Fab
+          className={classes.backTopFab}
+          color="primary"
+          size="large"
+          aria-label="scroll back to top"
+        >
+          <ArrowUpwardIcon />
+        </Fab>
+      </ScrollTop>
+    </React.Fragment>
+  );
+}
+
+Header.propTypes = {
+  handleSearchInput: PropTypes.func.isRequired,
+};

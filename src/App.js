@@ -5,6 +5,7 @@ import Favorite from "./pages/Favorite/Favorite";
 import Register from "./pages/Register/Register";
 import { getLocalStorage } from "./helpers/localStorage";
 import { storage } from "./constants/storage";
+import "./App.css";
 
 export default function App() {
   const isAuth = getLocalStorage(storage.isAuth);

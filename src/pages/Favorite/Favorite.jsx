@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 import MovieCard from "../../components/MovieCard/MovieCard";
 import { storage } from "../../constants/storage";
 import { getLocalStorage } from "../../helpers/localStorage";
-import "./Favorite.css";
 import { Routes } from "../../constants/routes";
+import "./Favorite.css";
 
 export default function Favorite({ isAuth, setFavCount }) {
   const movies = getLocalStorage(storage.favorites)

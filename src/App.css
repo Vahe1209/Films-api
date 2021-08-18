@@ -1,0 +1,9 @@
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1330px) {
+  body {
+    padding-top: 15px;
+  }
+}

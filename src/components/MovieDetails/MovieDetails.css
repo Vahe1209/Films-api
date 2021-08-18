@@ -136,17 +136,6 @@
   left: 997px;
 }
 
-.githubIcon {
-  position: absolute;
-  top: 493px;
-  left: 1040px;
-}
-
-.github {
-  color: rgb(0, 0, 0) !important;
-  font-size: 40px !important;
-}
-
 .border {
   position: absolute;
   width: 750px;
@@ -249,11 +238,6 @@
     left: 0;
   }
 
-  .githubIcon {
-    top: 1200px;
-    left: 85px;
-  }
-
   .border {
     width: 0;
     border-bottom: none;
@@ -314,11 +298,6 @@
     top: 780px;
     left: 475px;
   }
-
-  .githubIcon {
-    top: 1300px;
-    left: 430px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -348,10 +327,6 @@
 
   .tagline {
     left: 365px;
-  }
-
-  .githubIcon {
-    left: 330px;
   }
 }
 
@@ -383,10 +358,6 @@
   .tagline {
     left: 178px;
   }
-
-  .githubIcon {
-    left: 147px;
-  }
 }
 
 @media screen and (max-width: 375px) {
@@ -417,10 +388,6 @@
   .tagline {
     left: 170px;
   }
-
-  .githubIcon {
-    left: 139px;
-  }
 }
 
 @media screen and (max-width: 320px) {
@@ -450,9 +417,5 @@
 
   .tagline {
     left: 130px;
-  }
-
-  .githubIcon {
-    left: 85px;
   }
 }

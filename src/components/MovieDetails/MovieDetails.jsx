@@ -3,7 +3,6 @@ import { useParams } from "react-router";
 import { getImgUrl, getMovieById } from "../../services/services";
 import MovieFilterIcon from "@material-ui/icons/MovieFilter";
 import StarsIcon from "@material-ui/icons/Stars";
-import GitHubIcon from "@material-ui/icons/GitHub";
 import Loader from "../Loader/Loader";
 import "./MovieDetails.css";
 
@@ -54,15 +53,7 @@ export default function MovieDetails() {
           <div className="runtime">{movieDetails.runtime} mins</div>
           <div className="tagline">{movieDetails.tagline}</div>
           <div className="borderBottom"></div>
-          <a
-            href="https://github.com/KarlenNersisyan"
-            target="_blank"
-            rel="noreferrer"
-            className="githubIcon"
-          >
-            Contact me
-            <GitHubIcon className="github" />
-          </a>
+
           <div className="border"></div>
         </div>
       )}

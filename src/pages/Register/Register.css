@@ -1,0 +1,16 @@
+.registerBackground {
+  background-image: url("../../assets/images/registerBackground.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.textM {
+  color: white;
+}
+
+@media screen and (max-width: 1330px) {
+  .registerBackground {
+    height: 135vh;
+  }
+}

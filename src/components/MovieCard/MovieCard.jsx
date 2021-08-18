@@ -112,17 +112,8 @@ export default function MovieCard({
           <section>{description.slice(0, 70)}...</section>
         </Typography>
         <ul>
-          {genres.map((genre, index) => {
-            return (
-              <a
-                href="https://github.com/KarlenNersisyan"
-                target="_blank"
-                rel="noreferrer"
-                key={index}
-              >
-                <li className="genreName">{genre}</li>
-              </a>
-            );
+          {genres.map((genre) => {
+            return <li className="genreName">{genre}</li>;
           })}
         </ul>
       </CardContent>

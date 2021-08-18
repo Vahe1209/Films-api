@@ -19,9 +19,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <a className="textM" href="https://github.com/KarlenNersisyan">
-        {"KarlenNersisyan-GitHub"}
-      </a>{" "}
+
       {new Date().getFullYear()}
       {"."}
     </Typography>
